@@ -10,7 +10,8 @@ export interface RouteProps {
 
 export const getComponent = (history: History, routes: RouteProps[]) => {
   let renderComponent: any;
-  routes.forEach(route => {
+  routes.forEach(async route => {
+    // FIXME @konojunya path matchはとりあえず適当
     if (route.path === history.location.pathname) {
       renderComponent = route.component();
     }

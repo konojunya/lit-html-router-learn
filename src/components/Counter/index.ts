@@ -1,9 +1,10 @@
 import { html } from "lit-html";
 import { renderApp } from "../../";
+import { Link } from "../elements/Link";
 
 let count: number = 0;
 
-export const CounterPage = () => html`
+const CounterPage = () => html`
   <p>count: ${count}</p>
   <button
     @click=${(e: any) => {
@@ -21,4 +22,7 @@ export const CounterPage = () => html`
   >
     -
   </button>
+  ${Link("to top", "/")}
 `;
+
+export default CounterPage;

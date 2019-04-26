@@ -2,25 +2,23 @@ import { render, html } from "lit-html";
 import { getComponent, RouteProps } from "./router";
 import { createBrowserHistory } from "history";
 
+import Index from "./components/Index";
+import About from "./components/About";
+import Counter from "./components/Counter";
+
 export const history = createBrowserHistory();
-
-// route components
-import { IndexPage } from "./components/Index";
-import { AboutPage } from "./components/About";
-import { CounterPage } from "./components/Counter";
-
 const routes: RouteProps[] = [
   {
     path: "/",
-    component: IndexPage
+    component: Index
   },
   {
     path: "/about",
-    component: AboutPage
+    component: About
   },
   {
     path: "/counter",
-    component: CounterPage
+    component: Counter
   }
 ];
 

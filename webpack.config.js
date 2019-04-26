@@ -1,6 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWbpackPlugin = require("html-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
 const IS_PRODUCTION = process.env.NODE_ENV === "production";
@@ -69,7 +69,7 @@ module.exports = {
       }
     }),
     new webpack.optimize.ModuleConcatenationPlugin(),
-    new HtmlWebpackPlugin({
+    new HtmlWbpackPlugin({
       template: "./views/index.html"
     })
   ]
