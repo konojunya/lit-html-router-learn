@@ -1,2 +1,3 @@
-# my-prpl-playground
-PRPLをやってみる
+# lit-html-router-learn
+
+router っぽい何かをつくってみる
